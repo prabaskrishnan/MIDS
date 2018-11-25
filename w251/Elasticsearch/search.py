@@ -4,7 +4,7 @@ import requests
 
 def main():
     search_term=sys.argv[1]
-    search_url = 'http://169.54.142.59:9200/agri/india'
+    search_url = 'http://xxx.xx.xx.xx:9200/agri/india'
     response = requests.get(search_url + '/_search?q=' + search_term + '&pretty')
     if response.status_code == 200:
         results = json.loads(response.text)
